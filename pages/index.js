@@ -4,7 +4,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import WorkIcon from '@mui/icons-material/Work';
-import AddIcon from '@mui/icons-material/Add';
 import TodoList from './Comp/TodoList';
 
 export default function Home() {

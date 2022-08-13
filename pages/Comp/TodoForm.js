@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "../../styles/Form.module.css";
+import AddIcon from '@mui/icons-material/Add';
 
 function TodoForm(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : "");
@@ -59,7 +60,7 @@ function TodoForm(props) {
             ref={inputRef}
           /><br/>
           <button onClick={handleSubmit} className={`border-0 p-2 rounded-2 w-100 ${styles.btnAdd}`}>
-            Add todo
+            <AddIcon/> Add todo
           </button>
           </div>
         </div>
